@@ -2,7 +2,7 @@
 Some enhancement on current [Fast Level Line Transform (FLLT)](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=841532) algorithm.
 
 # FLLT
-![synthetic_image](https://cloud.githubusercontent.com/assets/14138581/13602893/65bbbff6-e574-11e5-8d67-cc3f03a0d98b.png)
+![synthetic_image](https://cloud.githubusercontent.com/assets/14138581/13603173/3ef60370-e576-11e5-9085-e0dc8f51aa8b.png)
 FLLT was originally proposed by *Pascal Monasse* and *Frédéric Guichard* in 2000, by combining `lower level tree` as well as `upper level tree` to form a non-reduant `tree of shapes (TOS)` structure of original image, with following features:
 
 * **Adaptive to scale transform**, which was inevitable in segmentation etc. applications.
@@ -22,6 +22,8 @@ Some enhancement was made in this work to overcome above mentioned issues respec
 * Merge non-dominant regions in image's background regions.
 
 # Experiment
+![synthetic_result](https://cloud.githubusercontent.com/assets/14138581/13603181/4fffbaa8-e576-11e5-8350-ddac5fbcc021.png)
+![scene_result](https://cloud.githubusercontent.com/assets/14138581/13603186/573a934c-e576-11e5-846d-ab7316b328b5.png)
 Here we adopted [MIT300 saliency dataset](http://saliency.mit.edu) to validate our algorithm, the results are as follows:
 
 * first column is original image.
