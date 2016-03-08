@@ -14,21 +14,22 @@ Despite FLLT's brilliant performance, there still exists some limitations:
 2. FLLT tends to provide an `over-segmentation` image, resulting in many fragmentized shapes, especially those laid in image's background, which can hardly be noticed, but add burden on network transmission as well as local arcievement.
 
 # Procedure
-![synthetic_result](https://cloud.githubusercontent.com/assets/14138581/13602896/6f09600e-e574-11e5-8da0-59fd82857422.png)
 Some enhancement was made in this work to overcome above mentioned issues respectively:
 
 * Add [saliency detection model](http://mmcheng.net/zh/salobjbenchmark/) with imitation of human's [fixation](https://en.wikipedia.org/wiki/Fixation_(visual)) and [saccade](https://en.wikipedia.org/wiki/Saccade) process and extract regions with salient geometric and texture structure as target (ROI), while remaining as backgroud. Especially a [MB+](http://cs-people.bu.edu/jmzhang/fastmbd.html) saliency detection model was adopted with consideration of performance and efficiency.
 * Convert image from [RGB Color Space](https://en.wikipedia.org/wiki/RGB_color_space) to [CIE Lab Color Space](https://en.wikipedia.org/wiki/Lab_color_space) and perform FLLT on image's L band.
 * Merge non-dominant regions in image's background regions.
 
-# Experiment
+Result of the algorithm on synthetic image can be seen as follows, with merging conditions from loose to strict.
 ![synthetic_result](https://cloud.githubusercontent.com/assets/14138581/13603181/4fffbaa8-e576-11e5-8350-ddac5fbcc021.png)
+
+# Experiment
 ![scene_result](https://cloud.githubusercontent.com/assets/14138581/13603186/573a934c-e576-11e5-846d-ab7316b328b5.png)
 Here we adopted [MIT300 saliency dataset](http://saliency.mit.edu) to validate our algorithm, the results are as follows:
 
 * first column is original image.
 * second column is MB+ saliency detection result on original image.
-* columns from three to five corresponding to image's simplification results with parameters from strict to loose.
+* columns from three to five corresponding to image's simplification results, with merging conditions from loose to strict.
 
 # Copyright
 [GNU LGPLv3](http://choosealicense.com/licenses/lgpl-3.0/)
