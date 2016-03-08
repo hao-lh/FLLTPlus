@@ -15,12 +15,12 @@ Despite FLLT's brilliant performance, there still exists some limitations:
 # Procedure
 Some enhancement was made in this work to overcome above mentioned issues respectively:
 
-* Add [`saliency detection model`](http://saliency.mit.edu) with imitation of human's [`fixation`](https://en.wikipedia.org/wiki/Fixation_(visual)) and [`saccade`](https://en.wikipedia.org/wiki/Saccade) process and extract regions with salient geometric and texture structure as target (ROI), while remaining as backgroud. Especially a [MB+ saliency detection model](http://cs-people.bu.edu/jmzhang/fastmbd.html) was adopted with consideration of performance and efficiency.
+* Add [`saliency detection model`](http://mmcheng.net/zh/salobjbenchmark/) with imitation of human's [`fixation`](https://en.wikipedia.org/wiki/Fixation_(visual)) and [`saccade`](https://en.wikipedia.org/wiki/Saccade) process and extract regions with salient geometric and texture structure as target (ROI), while remaining as backgroud. Especially a [MB+ saliency detection model](http://cs-people.bu.edu/jmzhang/fastmbd.html) was adopted with consideration of performance and efficiency.
 * Convert image from [`RGB Color Space`](https://en.wikipedia.org/wiki/RGB_color_space) to [`CIE Lab Color Space`](https://en.wikipedia.org/wiki/Lab_color_space) and perform FLLT on image's L band.
 * Merge non-dominant regions in image's background regions.
 
 # Experiment
-Here we adopted MIT300 dataset to validate our algorithm, the results are as follows:
+Here we adopted [MIT300 saliency dataset](http://saliency.mit.edu) to validate our algorithm, the results are as follows:
 
 * first column is original image
 * second column is MB+ saliency detection result on original image
