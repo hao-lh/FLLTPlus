@@ -1,5 +1,5 @@
 # FLLTPlus
-Some enhancement on current [`Fast Level Line Transform (FLLT)`](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=841532) algorithm.
+Some enhancement on current [Fast Level Line Transform (FLLT)](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=841532) algorithm.
 
 # FLLT
 FLLT was originally proposed by *Pascal Monasse* and *Frédéric Guichard* in 2000, by combining `lower level tree` as well as `upper level tree` to form a non-reduant `tree of shapes (TOS)` structure of original image, with following features:
@@ -15,8 +15,8 @@ Despite FLLT's brilliant performance, there still exists some limitations:
 # Procedure
 Some enhancement was made in this work to overcome above mentioned issues respectively:
 
-* Add [`saliency detection model`](http://mmcheng.net/zh/salobjbenchmark/) with imitation of human's [`fixation`](https://en.wikipedia.org/wiki/Fixation_(visual)) and [`saccade`](https://en.wikipedia.org/wiki/Saccade) process and extract regions with salient geometric and texture structure as target (ROI), while remaining as backgroud. Especially a [MB+](http://cs-people.bu.edu/jmzhang/fastmbd.html) saliency detection model was adopted with consideration of performance and efficiency.
-* Convert image from [`RGB Color Space`](https://en.wikipedia.org/wiki/RGB_color_space) to [`CIE Lab Color Space`](https://en.wikipedia.org/wiki/Lab_color_space) and perform FLLT on image's L band.
+* Add [saliency detection model](http://mmcheng.net/zh/salobjbenchmark/) with imitation of human's [fixation](https://en.wikipedia.org/wiki/Fixation_(visual)) and [saccade](https://en.wikipedia.org/wiki/Saccade) process and extract regions with salient geometric and texture structure as target (ROI), while remaining as backgroud. Especially a [MB+](http://cs-people.bu.edu/jmzhang/fastmbd.html) saliency detection model was adopted with consideration of performance and efficiency.
+* Convert image from [RGB Color Space](https://en.wikipedia.org/wiki/RGB_color_space) to [CIE Lab Color Space](https://en.wikipedia.org/wiki/Lab_color_space) and perform FLLT on image's L band.
 * Merge non-dominant regions in image's background regions.
 
 # Experiment
