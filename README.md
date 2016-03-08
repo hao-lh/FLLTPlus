@@ -5,7 +5,7 @@ Some enhancement on current [`Fast Level Line Transform (FLLT)`](http://ieeexplo
 FLLT was originally proposed by *Pascal Monasse* and *Frédéric Guichard* in 2000, by combining `lower level tree` as well as `upper level tree` to form a non-reduant `tree of shapes (TOS)` structure of original image, with following features:
 
 * **Adaptive to scale transform**, which was inevitable in segmentation etc. applications.
-* **Invariant to contrast change**, which means TOS can **preserve image's topological structure** before and after **monotonous functions'** acting.
+* **Invariant to contrast change**, where **image's topological structure** can be preserved before and after **monotonous functions'** acting on TOS.
 
 Despite FLLT's brilliant performance, there still exists some limitations:
 
