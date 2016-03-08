@@ -2,6 +2,7 @@
 Some enhancement on current [Fast Level Line Transform (FLLT)](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=841532) algorithm.
 
 # FLLT
+![synthetic_image](https://cloud.githubusercontent.com/assets/14138581/13602893/65bbbff6-e574-11e5-8d67-cc3f03a0d98b.png)
 FLLT was originally proposed by *Pascal Monasse* and *Frédéric Guichard* in 2000, by combining `lower level tree` as well as `upper level tree` to form a non-reduant `tree of shapes (TOS)` structure of original image, with following features:
 
 * **Adaptive to scale transform**, which was inevitable in segmentation etc. applications.
@@ -13,6 +14,7 @@ Despite FLLT's brilliant performance, there still exists some limitations:
 2. FLLT tends to provide an `over-segmentation` image, resulting in many fragmentized shapes, especially those laid in image's background, which can hardly be noticed, but add burden on network transmission as well as local arcievement.
 
 # Procedure
+![synthetic_result](https://cloud.githubusercontent.com/assets/14138581/13602896/6f09600e-e574-11e5-8da0-59fd82857422.png)
 Some enhancement was made in this work to overcome above mentioned issues respectively:
 
 * Add [saliency detection model](http://mmcheng.net/zh/salobjbenchmark/) with imitation of human's [fixation](https://en.wikipedia.org/wiki/Fixation_(visual)) and [saccade](https://en.wikipedia.org/wiki/Saccade) process and extract regions with salient geometric and texture structure as target (ROI), while remaining as backgroud. Especially a [MB+](http://cs-people.bu.edu/jmzhang/fastmbd.html) saliency detection model was adopted with consideration of performance and efficiency.
