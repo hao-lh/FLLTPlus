@@ -20,9 +20,10 @@ Some enhancement was made in this work to overcome above mentioned issues respec
 * Convert image from [RGB Color Space](https://en.wikipedia.org/wiki/RGB_color_space) to [CIE Lab Color Space](https://en.wikipedia.org/wiki/Lab_color_space) and perform FLLT on image's L band.
 * Merge non-dominant regions in image's background regions.
 
-![ds02w](https://cloud.githubusercontent.com/assets/14138581/13728326/76bceb5c-e94f-11e5-87e2-62d4564e0b43.png)
-![ds03w](https://cloud.githubusercontent.com/assets/14138581/13728327/76c53a6e-e94f-11e5-9824-2c43c0e6a154.png)
-![ds04w](https://cloud.githubusercontent.com/assets/14138581/13728328/76cc4c0a-e94f-11e5-967f-407fb0e7a876.png)
+![ds01w](https://cloud.githubusercontent.com/assets/14138581/13728372/05770728-e951-11e5-99f3-10ba73ee46d6.png)
+![ds02w](https://cloud.githubusercontent.com/assets/14138581/13728374/05775d54-e951-11e5-8ee5-9912f3f49217.png)
+![ds03w](https://cloud.githubusercontent.com/assets/14138581/13728371/0572d16c-e951-11e5-8fcd-a467c6063f03.png)
+![ds04w](https://cloud.githubusercontent.com/assets/14138581/13728373/057746fc-e951-11e5-8e91-6472776c63ec.png)
 
 Result of the algorithm on synthetic image can be seen as follows, with merging conditions from loose to strict.
 ![synthetic_result](https://cloud.githubusercontent.com/assets/14138581/13603181/4fffbaa8-e576-11e5-8350-ddac5fbcc021.png)
