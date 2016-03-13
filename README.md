@@ -38,4 +38,4 @@ Part of algorithm's performance on [MIT300 saliency detection dataset](http://sa
 
 # Miscellaneous
 * Copyright: [GNU LGPLv3](http://choosealicense.com/licenses/lgpl-3.0/)
-* Special thanks to reference code [MegaWave2](https://github.com/nilx/megawave) and discussion with [Pascal Monasse](mailto:monasse@imagine.enpc.fr)
+* Special thanks to reference code [MegaWave2](https://github.com/nilx/megawave) and [Pascal Monasse](mailto:monasse@imagine.enpc.fr) for the discussion.
