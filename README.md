@@ -25,16 +25,17 @@ Some enhancement was made in this work to overcome above mentioned issues respec
 ![ds03w](https://cloud.githubusercontent.com/assets/14138581/13728371/0572d16c-e951-11e5-8fcd-a467c6063f03.png)
 ![ds04w](https://cloud.githubusercontent.com/assets/14138581/13728373/057746fc-e951-11e5-8e91-6472776c63ec.png)
 
+# Experiment
 Result of the algorithm on synthetic image can be seen as follows, with merging conditions from loose to strict.
 ![synthetic_result](https://cloud.githubusercontent.com/assets/14138581/13603181/4fffbaa8-e576-11e5-8350-ddac5fbcc021.png)
 
-# Experiment
+Part of algorithm's performance on [MIT300 saliency detection dataset](http://saliency.mit.edu), ranging from people, animals, architecture, artificial objects to natural scene, with merging conditions from loose to strict.
 ![scene_result](https://cloud.githubusercontent.com/assets/14138581/13603186/573a934c-e576-11e5-846d-ab7316b328b5.png)
-Here we adopted [MIT300 saliency dataset](http://saliency.mit.edu) to validate our algorithm, the results are as follows:
 
 * first column is original image.
 * second column is MB+ saliency detection result on original image.
 * columns from three to five corresponding to image's simplification results, with merging conditions from loose to strict.
 
-# Copyright
-[GNU LGPLv3](http://choosealicense.com/licenses/lgpl-3.0/)
+# Miscellaneous
+* Copyright: [GNU LGPLv3](http://choosealicense.com/licenses/lgpl-3.0/)
+* Special thanks to reference code [MegaWave2](https://github.com/nilx/megawave) and discussion with [Pascal Monasse](mailto:monasse@imagine.enpc.fr)
